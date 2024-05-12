@@ -1,0 +1,128 @@
+@import "../utilidades/variables";
+
+//main index
+
+@media only screen and (max-width: 650px) {
+    .principal {
+        .subtitulo {
+            height: 55px;
+            padding: 5px;
+
+            h2 {
+                color: $color-font;
+                font-family: $fuente-principal;
+                text-align: center;
+                height: 25px;
+            }
+        }
+
+        .deporte {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 75px;
+            padding-left: 60px;
+            padding-right: 60px;
+
+            .logopilar {
+                width: 70px;
+                height: 70px;
+
+                #imgpilar {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            .parrafopilar {
+                p {
+                    width: 300px;
+                    height: 70px;
+                    font-size: x-small;
+                    font-family: $fuente-principal;
+                    color: $color-font;
+                }
+            }
+        }
+    }
+
+
+}
+
+//articule info index
+
+@media only screen and (max-width: 650px) {
+
+    .info {
+        display: flex;
+        justify-content: space-around;
+        background-color: $color-principal;
+        align-content: center;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+
+            #munisvg {
+                width: 100px;
+                height: 50px;
+            }
+
+            .data {
+                color: $color-font;
+                font-family: $fuente-principal;
+                font-size: small;
+                text-align: center;
+
+            }
+        }
+    }
+
+}
+
+//footer
+
+@media only screen and (max-width: 650px) {
+    footer {
+        background-color: $color-principal;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 20px;
+
+
+        p {
+            font-family: $fuente-principal;
+            font-style: normal;
+            font-size: x-small;
+            text-align: center;
+            color: $color-font;
+            background-color: $color-principal;
+
+            .logo2 {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+//sedes
+
+@media only screen and (max-width: 650px) {
+    #club {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        .sedes {
+            flex-wrap: wrap;
+            flex-direction: column;
+
+        #picture {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+}

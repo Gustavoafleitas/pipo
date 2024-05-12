@@ -1,0 +1,167 @@
+@import "../sass/utilidades/variables";
+
+//MIXIN
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+//Navbar//
+
+#menu {
+    background-color: $color-principal;
+    color: $color-font;
+    padding: 0px;
+
+    #navegador {
+        color: $color-font;
+        font-family: $fuente-principal;
+        font-size: large;
+    }
+
+}
+
+//Titulo H1//
+
+#titulo {
+    font-family: $fuente-principal;
+    font-style: normal;
+    text-align: center;
+    color: $color-font;
+    background-color: $color-secundario;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-bottom: 10px;
+}
+
+//main index
+.principal {
+    background-color: $color-principal ;
+
+    .subtitulo {
+        padding: 15px;
+
+        h2 {
+            color: $color-font;
+            font-family: $fuente-principal;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+
+    .deporte {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        .logopilar {
+            @include sizes(200px,150px);
+            #imgpilar {
+                @include sizes(200px,150px);
+                }
+        }
+
+        .parrafopilar {
+            @include sizes(700px,150px );
+            font-size: large;
+            font-family: $fuente-principal;
+            color: $color-font;
+        }
+    }
+}
+
+//articule info index
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-principal;
+    align-content: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        #munisvg {
+            @include sizes(175px,95px );
+        }
+
+        .data {
+            color: $color-font;
+            font-family: $fuente-principal;
+            font-size: large;
+            text-align: center;
+
+        }
+    }
+}
+
+//footer
+
+footer {
+    background-color: $color-principal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 35px;
+
+    p {
+        font-family: $fuente-principal;
+        font-style: normal;
+        font-size: larger;
+        text-align: center;
+        color: $color-font;
+        background-color: $color-principal;
+
+        .logo2 {
+            @include sizes(35px,35px );
+          
+        }
+    }
+}
+
+//PAGES
+
+#club {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    .sedes {
+        display: flex;
+        #picture {
+            @include sizes(50%,50% );
+        }
+    }
+}
+
+//extend ejemplo
+
+.parrafo {
+  @extend .fondo;
+  text-align: center;
+  font-size: larger;
+  font-family: $fuente-principal;
+  color: $color-font;
+  
+}
+
+article {
+    #mapa {
+        border-radius: 5px;
+        border: solid 2px $color-principal;
+    
+    }
+}
+
+
+.fondo {
+    background-color: $color-principal;
+}
+
+
+@import "../sass/mediaqueries/mediaqueries";
+
